@@ -24,8 +24,6 @@ int main()
 		//USER 
 		while (TRUE)
 		{
-			
-
 			card_value = rand() % 13 + 1; //0이 안나와서
 			if (card_value == 10 || card_value == 12 || card_value == 13)//JQK는 10
 				card_value = 10;
@@ -53,7 +51,6 @@ int main()
 				if (yes_or_no == 'n' || yes_or_no == 'N')break;
 			}
 		}
-		//USER FIN
-
+		
 	}
 }
