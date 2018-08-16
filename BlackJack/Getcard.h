@@ -13,7 +13,8 @@ public:
 	char yes_or_no;
 
 public:
-	void USER_GET_CARD();
+	int USER_GET_CARD();
 	void DEALER_GET_CARD();
 	void RESET_CARD();
+	void CARD_OPEN();
 }; 

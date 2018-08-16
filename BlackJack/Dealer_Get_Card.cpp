@@ -4,8 +4,8 @@ void GET_CARD::DEALER_GET_CARD()
 {
 	while (TRUE)
 	{
-		dealer_card_value = rand() % 13 + 1; //0이 안나와서
-		if (dealer_card_value == 10 || dealer_card_value == 12 || dealer_card_value == 13)//JQK는 10
+		dealer_card_value = rand() % 13 + 1; 
+		if (dealer_card_value == 10 || dealer_card_value == 12 || dealer_card_value == 13)
 			dealer_card_value = 10;
 		if (dealer_card_value == 1)dealer_card_value = 11;
 

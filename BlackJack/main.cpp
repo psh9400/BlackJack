@@ -14,6 +14,7 @@ int main()
 		CARD.RESET_CARD();
 		SET.BET_RULE();
 		CARD.DEALER_GET_CARD();
-		CARD.USER_GET_CARD();
+		if (CARD.USER_GET_CARD() == 2) CARD.CARD_OPEN();
+		
 	}
 }

@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Bet_Rule.cpp" />
+    <ClCompile Include="Card_Open.cpp" />
     <ClCompile Include="Dealer_Get_Card.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Reset_Card.cpp" />
