@@ -1,6 +1,6 @@
 #include "main.h"
 
-void BET_RULE(int& set_owner_money, int& bet_rate)
+void SET_RULE::BET_RULE()
 {
 	int money_value;
 	int rate_value;

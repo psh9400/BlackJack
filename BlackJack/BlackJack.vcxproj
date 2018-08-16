@@ -142,9 +142,11 @@
     <ClCompile Include="Bet_Rule.cpp" />
     <ClCompile Include="Dealer_Get_Card.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Reset_Card.cpp" />
     <ClCompile Include="User_Get_Card.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Bet_Rule.h" />
     <ClInclude Include="Getcard.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>

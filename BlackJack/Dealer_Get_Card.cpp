@@ -10,8 +10,8 @@ void GET_CARD::DEALER_GET_CARD()
 		if (dealer_card_value == 1)dealer_card_value = 11;
 
 		dealer_card_point += dealer_card_value;
-		card_count++;
-		if (card_count>1)
+		dealer_card_count++;
+		if (dealer_card_count>1)
 		{
 			if (dealer_card_point > 16)break;
 		}

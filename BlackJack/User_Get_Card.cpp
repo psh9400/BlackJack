@@ -18,10 +18,10 @@ void GET_CARD::USER_GET_CARD()
 			} while (!(ace_select == 'a' || ace_select == 'A'));
 		}
 		user_card_point += user_card_value;
-		card_count++;
-		if (card_count > 1)
+		user_card_count++;
+		if (user_card_count > 1)
 		{
-			cout << card_count << "번째 카드 , 점수 : " << user_card_point << endl;
+			cout << user_card_count << "번째 카드 , 점수 : " << user_card_point << endl;
 			do {
 				cout << "카드를 더 받으시겠습니까 ? (Y/N) ";
 				cin >> &yes_or_no;
