@@ -9,6 +9,7 @@ public:
 	int dealer_card_point;
 	int user_card_count;
 	int dealer_card_count;
+	int temporary_dealer_point;
 	char ace_select;
 	char yes_or_no;
 
