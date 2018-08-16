@@ -2,6 +2,8 @@
 
 #include <iostream>
 #include <stdlib.h>
+#include <time.h>
+#include "Getcard.h"
 using namespace std;
 
 #pragma once

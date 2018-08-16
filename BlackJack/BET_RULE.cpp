@@ -1,9 +1,4 @@
-#pragma once
-
-#include <iostream>
-#include <stdlib.h>
 #include "main.h"
-using namespace std;
 
 void BET_RULE(int& set_owner_money, int& bet_rate)
 {
@@ -27,5 +22,4 @@ void BET_RULE(int& set_owner_money, int& bet_rate)
 		cin.clear();
 		cin.ignore(256, '\n');
 	} while (!(rate_value == 1 || rate_value == 2 || rate_value == 3));
-
 }
