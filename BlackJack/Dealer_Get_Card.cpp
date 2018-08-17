@@ -14,7 +14,9 @@ void GET_CARD::DEALER_GET_CARD()
 		if (dealer_card_count == 1)
 		{
 			dealer_card_point += dealer_card_value;
+			cout << " --------------------------------------------" << endl;
 			cout << " 딜러가 오픈한 카드는 """ << dealer_card_point << """ 입니다." << endl;
+			cout << " --------------------------------------------" << endl;
 		}
 		else if (dealer_card_point <= 21 && dealer_card_point >= 17)
 			break;

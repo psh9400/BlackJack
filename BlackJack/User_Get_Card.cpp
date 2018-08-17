@@ -9,7 +9,8 @@ int GET_CARD::USER_GET_CARD()
 			user_card_value = 10;
 		if (user_card_value == 11 || user_card_value == 1)
 		{
-			cout << "ACE를 뽑으셨습니다. 1은 a , 11은 A를 입력하세요 : ";
+			cout << " --------------------------------------------" << endl;
+			cout << " ACE를 뽑으셨습니다. 1은 a , 11은 A를 입력하세요 : ";
 			do {
 				cin >> &ace_select;
 				if (ace_select == 'a') user_card_value = 1;
@@ -21,11 +22,15 @@ int GET_CARD::USER_GET_CARD()
 		user_card_count++;
 		if (user_card_count > 1)
 		{
-			cout << user_card_count << "번째 카드 , 점수 : " << user_card_point << endl;
+			cout << " --------------------------------------------" << endl;
+			cout << " "<<user_card_count << "번째 카드 , 점수 : " << user_card_point << endl;
+			cout << " --------------------------------------------" << endl;
 			if (user_card_point > 21)return 2;
 			do {
-				cout << "카드를 더 받으시겠습니까 ? (Y/N) ";
+				cout << " --------------------------------------------" << endl;
+				cout << " 카드를 더 받으시겠습니까 ? (Y/N) ";
 				cin >> &yes_or_no;
+				cout << " --------------------------------------------" << endl;
 			} while (!(yes_or_no == 'y' || yes_or_no == 'Y' || yes_or_no == 'n' || yes_or_no == 'N'));
 
 			if (yes_or_no == 'n' || yes_or_no == 'N')return 2;

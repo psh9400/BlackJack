@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
+#include <Windows.h>
 #include "main.h"
 
 #define TRUE 1
@@ -12,11 +13,12 @@ int main()
 	while (TRUE)
 	{
 		srand(time(NULL));
+		system("cls");
 		CARD.RESET_CARD();
 		SET.BET_RULE();
 		CARD.DEALER_GET_CARD();
 		if (CARD.USER_GET_CARD() == 2) CARD.CARD_OPEN();
 		SET.GET_MONEY();
-		
+		Sleep(3000);
 	}
 }

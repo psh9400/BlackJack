@@ -22,12 +22,8 @@ int SET_RULE::GET_MONEY()
 	{
 		owner_money += bet_rate;
 	}
-	cout << "현재 금액 : " << owner_money << " $ 입니다." << endl;
-
-	/*if (owner_money < 0)
-	{
-	return 4;
-	}*/
+	cout << " --------------------------------------------" << endl;
+	cout << " 현재 금액 : " << owner_money << " $ 입니다." << endl;
 
 	return 0;
 }

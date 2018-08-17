@@ -2,7 +2,8 @@
 
 void GET_CARD::CARD_OPEN()
 {
-	if (user_card_point > 21) cout << "BURST!!" << endl;
+	cout << " --------------------------------------------" << endl;
+	if (user_card_point > 21) cout << " BURST!!" << endl;
 	else
 	{
 		if (user_card_point > dealer_card_point)
@@ -16,5 +17,6 @@ void GET_CARD::CARD_OPEN()
 		else cout << " DRAW " << endl;
 	}
 	cout << " USER POINT : " << user_card_point << "      DEALER POINT : " << dealer_card_point << endl;
+	cout << " --------------------------------------------" << endl;
 	
 }
