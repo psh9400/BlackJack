@@ -7,18 +7,17 @@
 using namespace std;
 
 int main()
-{
-	GET_CARD CARD;
+{	
 	SET_RULE SET;
 	while (TRUE)
 	{
 		srand(time(NULL));
 		system("cls");
-		CARD.RESET_CARD();
+		SET.RESET_CARD();
 		SET.BET_RULE();
-		CARD.DEALER_GET_CARD();
-		if (CARD.USER_GET_CARD() == 2) CARD.CARD_OPEN();
+		SET.DEALER_GET_CARD();
+		if (SET.USER_GET_CARD() == 2) SET.CARD_OPEN();
 		SET.GET_MONEY();
-		Sleep(3000);
+		Sleep(3300);
 	}
 }

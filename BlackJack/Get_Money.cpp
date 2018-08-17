@@ -1,4 +1,3 @@
-
 #include "main.h"
 
 int SET_RULE::GET_MONEY()
@@ -10,6 +9,8 @@ int SET_RULE::GET_MONEY()
 	{
 		if (user_card_point == 21)
 			owner_money += (bet_rate) * 3;
+		else if (user_card_point > 21)
+			owner_money;
 		else
 			owner_money += (bet_rate) * 2;
 	}
