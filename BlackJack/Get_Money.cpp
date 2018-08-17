@@ -1,32 +1,33 @@
+
 #include "main.h"
 
-int SET_RULE ::GET_MONEY()
+int SET_RULE::GET_MONEY()
 {
-	GET_CARD GET_CARD;
 
-	set_owner_money -= bet_rate;
+	owner_money -= bet_rate;
 
-	if (GET_CARD.user_card_point > GET_CARD.dealer_card_point && GET_CARD.user_card_point!=21)
+	if (user_card_point > dealer_card_point)
 	{
-		set_owner_money += (bet_rate) * 2;
+		if (user_card_point == 21)
+			owner_money += (bet_rate) * 3;
+		else
+			owner_money += (bet_rate) * 2;
 	}
-	else if (GET_CARD.user_card_point > GET_CARD.dealer_card_point && GET_CARD.user_card_point == 21)
+	else if (dealer_card_point > user_card_point)
 	{
-		set_owner_money += (bet_rate) * 3;
+		if (dealer_card_point == 21)
+			owner_money -= bet_rate;
 	}
-	else if (GET_CARD.dealer_card_point > GET_CARD.user_card_point && GET_CARD.dealer_card_point != 21)
+	else if (dealer_card_point == user_card_point)
 	{
+		owner_money += bet_rate;
 	}
-	else if (GET_CARD.dealer_card_point > GET_CARD.user_card_point && GET_CARD.dealer_card_point == 21)
+	cout << "현재 금액 : " << owner_money << " $ 입니다." << endl;
+
+	/*if (owner_money < 0)
 	{
-		set_owner_money -= bet_rate;
-	}
-	cout << "현재 금액 : " << set_owner_money << " $ 입니다." << endl;
-	
-	if (set_owner_money < 0)
-	{
-		return 4;
-	}
+	return 4;
+	}*/
 
 	return 0;
 }
