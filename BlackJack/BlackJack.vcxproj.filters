@@ -33,15 +33,18 @@
     <ClCompile Include="Card_Open.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Get_Money.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Getcard.h">
+    <ClInclude Include="Bet_Rule.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Bet_Rule.h">
+    <ClInclude Include="Get_Card.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

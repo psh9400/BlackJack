@@ -2,24 +2,22 @@
 
 void SET_RULE::BET_RULE()
 {
-	int money_value;
-	int rate_value;
 	do {
 		cout << "1. 50000$  2. 30000$  3. 10000$" << endl;
 		cout << "초기 자금을 정해주세요 : ";
-		cin >> money_value;
+		cin >> set_owner_money;
 		if (cin.fail())
 			cout << " Retry ! " << endl;
 		cin.clear();
 		cin.ignore(256, '\n');
-	} while (!(money_value == 1 || money_value == 2 || money_value == 3));
+	} while (!(set_owner_money == 1 || set_owner_money == 2 || set_owner_money == 3));
 	do {
 		cout << "2. 5000$    2. 3000$    3. 1000$" << endl;
 		cout << "배팅 금액을 정해주세요 : ";
-		cin >> rate_value;
+		cin >> bet_rate;
 		if (cin.fail())
 			cout << " Retry ! " << endl;
 		cin.clear();
 		cin.ignore(256, '\n');
-	} while (!(rate_value == 1 || rate_value == 2 || rate_value == 3));
+	} while (!(bet_rate == 1 || bet_rate == 2 || bet_rate == 3));
 }

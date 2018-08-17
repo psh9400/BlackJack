@@ -9,7 +9,6 @@ void GET_CARD::DEALER_GET_CARD()
 			dealer_card_value = 10;
 		if (dealer_card_value == 1)dealer_card_value = 11;
 
-
 		dealer_card_count++;
 
 		if (dealer_card_count == 1)
@@ -17,14 +16,12 @@ void GET_CARD::DEALER_GET_CARD()
 			dealer_card_point += dealer_card_value;
 			cout << " 딜러가 오픈한 카드는 """ << dealer_card_point << """ 입니다." << endl;
 		}
-		else if (dealer_card_point <= 21 && dealer_card_point >= 17)break;
-		else
-		{
-			temporary_dealer_point += dealer_card_value;
-			if (dealer_card_point + temporary_dealer_point < 17)dealer_card_point += temporary_dealer_point;
-
-		}
-
+		else if (dealer_card_point <= 21 && dealer_card_point >= 17)
+			break;
+		else if (dealer_card_point < 17 && dealer_card_count>1) 
+			dealer_card_point += dealer_card_value;
+		else 
+			dealer_card_point -= dealer_card_value;
 	}
 }
 

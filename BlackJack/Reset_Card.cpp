@@ -9,6 +9,5 @@ void GET_CARD::RESET_CARD()
 	dealer_card_point = RESET;
 	user_card_count = RESET;
 	dealer_card_count = RESET;
-	temporary_dealer_point = RESET;
 }
 
