@@ -16,8 +16,10 @@ int main()
 		SET.RESET_CARD();
 		SET.BET_RULE();
 		SET.DEALER_GET_CARD();
-		if (SET.USER_GET_CARD() == 2) SET.CARD_OPEN();
+		if (SET.USER_GET_CARD() == 2)
+			SET.CARD_OPEN();
 		SET.GET_MONEY();
 		Sleep(3300);
 	}
+	return 0;
 }

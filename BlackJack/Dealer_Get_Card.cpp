@@ -20,9 +20,11 @@ void GET_CARD::DEALER_GET_CARD()
 		}
 		else if (dealer_card_point <= 21 && dealer_card_point >= 17)
 			break;
-		else if (dealer_card_point < 17 && dealer_card_count>1) 
+		else if (dealer_card_point < 17 && dealer_card_count>1)
+		{ 
 			dealer_card_point += dealer_card_value;
-		else 
+		}
+		else
 			dealer_card_point -= dealer_card_value;
 	}
 }
