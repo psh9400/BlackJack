@@ -1,5 +1,5 @@
 
-■BlackJack
+ <C++ BlackJack>
 #
 ■게임 방법
 #
